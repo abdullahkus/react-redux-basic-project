@@ -54,8 +54,8 @@ export const AddPostModal = ({ isModalOpen, setIsModalOpen }) => {
             }
         >
             <Form name='add-post' onFinish={onAddHandler} autoComplete='on'>
-                <Row gutter={12}>
-                    <Col span={12}>
+                <Row gutter={[12, 12]}>
+                    <Col xs={24} md={12}>
                         <Form.Item
                             label='Title'
                             name='title'
@@ -69,7 +69,7 @@ export const AddPostModal = ({ isModalOpen, setIsModalOpen }) => {
                             <Input />
                         </Form.Item>
                     </Col>
-                    <Col span={12}>
+                    <Col xs={24} md={12}>
                         <Form.Item
                             name='userId'
                             label='User'
