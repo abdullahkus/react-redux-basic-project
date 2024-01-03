@@ -95,12 +95,7 @@ export const PostDetailsContainer = () => {
                         </Col>
                     </Row>
                     <Divider />
-                    <Paragraph
-                        ellipsis={{ rows: 2, expandable: true, symbol: 'more' }}
-                        style={{ whiteSpace: 'pre-line' }}
-                    >
-                        {post.body}
-                    </Paragraph>
+                    <Paragraph style={{ whiteSpace: 'pre-line' }}>{post.body}</Paragraph>
                 </>
             )}
             <Card
